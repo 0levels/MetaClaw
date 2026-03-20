@@ -82,7 +82,7 @@ class SkillEvolver:
             self._openai_client = None
         else:
             self._custom_client = None
-            api_key = os.environ.get("OPENAI_API_KEY", "aB7cD9eF2gH5iJ8kL1mN4oP6qR3sT0uV")
+            api_key = os.environ.get("OPENAI_API_KEY", "")
             base_url = os.environ.get(
                 "OPENAI_BASE_URL",
                 "https://openai-api.shenmishajing.workers.dev/v1",
