@@ -104,6 +104,16 @@ Serving, reward modeling, and training are fully decoupled. The agent continues 
 
 ### 1. Install
 
+**OpenClaw (one-click):** get [`metaclaw-plugin.zip`](https://github.com/aiming-lab/MetaClaw/releases/download/v0.3.3/metaclaw-plugin.zip) ([v0.3.3](https://github.com/aiming-lab/MetaClaw/releases/tag/v0.3.3)), unpack to `~/.openclaw/extensions/metaclaw-openclaw`, run the commands below, then `metaclaw setup` and `metaclaw start`. For the full installation walkthrough (Windows, mirrors, configuration, troubleshooting), see [`extensions/metaclaw-openclaw/README.md`](./extensions/metaclaw-openclaw/README.md).
+
+```bash
+curl -LO https://github.com/aiming-lab/MetaClaw/releases/download/v0.3.3/metaclaw-plugin.zip
+unzip metaclaw-plugin.zip -d ~/.openclaw/extensions/metaclaw-openclaw
+openclaw plugins enable metaclaw-openclaw && openclaw gateway restart
+```
+
+**pip** (PyPI or this repo):
+
 ```bash
 pip install -e .                        # skills_only mode (lightweight)
 pip install -e ".[rl]"                  # + RL training support (torch, transformers, tinker)
