@@ -132,6 +132,12 @@ Das Plugin wird beim Starten von MetaClaw automatisch installiert. Du kannst es 
 npx -y @tencent-weixin/openclaw-weixin-cli@latest install
 ```
 
+Um WeChat-Konten zu wechseln (mit neuem QR-Code erneut anmelden):
+
+```bash
+metaclaw start --wechat-relogin
+```
+
 Wenn du `rl.backend=mint` verwenden willst, installiere das MinT-Kompatibilitätspaket separat in derselben Umgebung, zum Beispiel [`mindlab-toolkit`](https://github.com/MindLab-Research/mindlab-toolkit). Für `rl.backend=weaver` installiere separat [`nex-weaver`](https://github.com/nex-agi/weaver). MetaClaw hält diese Abhängigkeiten absichtlich aus dem Standardpaket heraus, damit RL-Nutzer Tinker, MinT oder Weaver explizit wählen können.
 
 ### 2. Konfiguration

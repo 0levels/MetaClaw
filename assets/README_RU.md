@@ -132,6 +132,12 @@ metaclaw start
 npx -y @tencent-weixin/openclaw-weixin-cli@latest install
 ```
 
+Чтобы переключить аккаунты WeChat (переподключитесь с новым QR-кодом):
+
+```bash
+metaclaw start --wechat-relogin
+```
+
 Если вы хотите использовать `rl.backend=mint`, установите пакет совместимости MinT отдельно в том же окружении, например [`mindlab-toolkit`](https://github.com/MindLab-Research/mindlab-toolkit). Для `rl.backend=weaver` отдельно установите [`nex-weaver`](https://github.com/nex-agi/weaver). MetaClaw не включает эти зависимости в пакет по умолчанию, чтобы пользователи RL могли явно выбирать между Tinker, MinT и Weaver.
 
 ### 2. Настройка

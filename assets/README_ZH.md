@@ -132,6 +132,12 @@ metaclaw start
 npx -y @tencent-weixin/openclaw-weixin-cli@latest install
 ```
 
+要切换微信账号（使用新的二维码重新登录）：
+
+```bash
+metaclaw start --wechat-relogin
+```
+
 如果你要使用 `rl.backend=mint`,请在同一环境里额外安装 MinT 兼容包,例如 [`mindlab-toolkit`](https://github.com/MindLab-Research/mindlab-toolkit)。如果你要使用 `rl.backend=weaver`,请另行安装 [`nex-weaver`](https://github.com/nex-agi/weaver)。MetaClaw 不会把这些依赖放进默认安装中,这样 RL 用户可以明确选择 Tinker、MinT 或 Weaver。
 
 ### 2. 配置

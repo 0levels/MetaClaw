@@ -132,6 +132,12 @@ Plugin được cài đặt tự động khi bắt đầu MetaClaw. Bạn cũng 
 npx -y @tencent-weixin/openclaw-weixin-cli@latest install
 ```
 
+Để chuyển đổi tài khoản WeChat (đăng nhập lại bằng mã QR mới):
+
+```bash
+metaclaw start --wechat-relogin
+```
+
 Neu ban muon su dung `rl.backend=mint`, hay cai dat goi tuong thich MinT rieng trong cung moi truong, vi du [`mindlab-toolkit`](https://github.com/MindLab-Research/mindlab-toolkit). Neu ban muon su dung `rl.backend=weaver`, hay cai dat [`nex-weaver`](https://github.com/nex-agi/weaver) rieng. MetaClaw khong dua cac phu thuoc nay vao goi mac dinh de nguoi dung RL co the chon ro rang Tinker, MinT hoac Weaver.
 
 ### 2. Cau hinh
